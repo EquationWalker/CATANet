@@ -1,5 +1,6 @@
 # CATANet
 This repository is an official implementation of the paper "CATANet: Efficient Content-Aware Token Aggregation for Lightweight Image Super-Resolution", CVPR, 2025.
+[[arXiv](https://arxiv.org/abs/2503.06896)] 
 
 ## Contents
 1. [Enviroment](#Environment)
