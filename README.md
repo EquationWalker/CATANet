@@ -38,7 +38,7 @@ python setup.py develop
 ### Data Preparation
 - Download the training dataset [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) and put them in the folder `./datasets`.
 - Download the testing data (Set5 + Set14 + BSD100 + Urban100 + Manga109 [[Download](https://drive.google.com/file/d/1_FvS_bnSZvJWx9q4fNZTR8aS15Rb0Kc6/view?usp=sharing)]) and put them in the folder `./datasets`.
-- It's recommanded to refer to the data preparation from [BasicSR](https://github.com/XPixelGroup/BasicSR/blob/master/docs/DatasetPreparation.md) for faster data reading speed.
+- It's recommended to refer to the data preparation from [BasicSR](https://github.com/XPixelGroup/BasicSR/blob/master/docs/DatasetPreparation.md) for faster data reading speed.
 
 ### Training Commands
 - Refer to the training configuration files in `./options/train` folder for detailed settings.
