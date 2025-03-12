@@ -1,6 +1,6 @@
 # general settings for image SR training
 name: train_CATANet_x2_scratch
-model_type: SRModel
+model_type: CATANetModel
 scale: 2
 num_gpu: auto
 manual_seed: 3407
@@ -84,12 +84,12 @@ val:
 
   metrics:
     psnr: # metric name, can be arbitrary
-      type: calculate_psnr
+      type: calculate_psnr_pt
       crop_border: 2
       test_y_channel: true
 
     ssim:
-      type: calculate_ssim
+      type: calculate_ssim_pt
       crop_border: 2
       test_y_channel: true
 

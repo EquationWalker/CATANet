@@ -12,11 +12,11 @@ from .base_model import BaseModel
 
 
 @MODEL_REGISTRY.register()
-class SRModel(BaseModel):
+class CATANetModel(BaseModel):
     """Base SR model for single image super-resolution."""
 
     def __init__(self, opt):
-        super(SRModel, self).__init__(opt)
+        super().__init__(opt)
 
         # define network
         self.net_g = build_network(opt['network_g'])
@@ -206,10 +206,10 @@ class SRModel(BaseModel):
 
             visuals = self.get_current_visuals()
             sr_img = tensor2img([visuals['result']])
-            metric_data['img'] = sr_img
+            metric_data['img'] = visuals['result']
             if 'gt' in visuals:
-                gt_img = tensor2img([visuals['gt']])
-                metric_data['img2'] = gt_img
+                # gt_img = tensor2img([visuals['gt']])
+                metric_data['img2'] = visuals['gt']
                 del self.gt
 
             # tentative for out of GPU memory
@@ -251,9 +251,9 @@ class SRModel(BaseModel):
     def _log_validation_metric_values(self, current_iter, dataset_name, tb_logger):
         log_str = f'Validation {dataset_name}\n'
         for metric, value in self.metric_results.items():
-            log_str += f'\t # {metric}: {value:.4f}'
+            log_str += f'\t # {metric}: {value.item():.4f}'
             if hasattr(self, 'best_metric_results'):
-                log_str += (f'\tBest: {self.best_metric_results[dataset_name][metric]["val"]:.4f} @ '
+                log_str += (f'\tBest: {self.best_metric_results[dataset_name][metric]["val"].item():.4f} @ '
                             f'{self.best_metric_results[dataset_name][metric]["iter"]} iter')
             log_str += '\n'
 
