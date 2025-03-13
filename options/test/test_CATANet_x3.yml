@@ -60,7 +60,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: experiments/ckpts/CATANet/x3.pth
+  pretrain_network_g: pretrained_models/x3.pth
   strict_load_g: true
   results_root: results/CATANet
 
