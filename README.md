@@ -1,11 +1,11 @@
 # CATANet - CVPR2025
 This repository is an official implementation of the paper "CATANet: Efficient Content-Aware Token Aggregation for Lightweight Image Super-Resolution", CVPR, 2025. 
 
-### [[arXiv](https://arxiv.org/abs/2503.06896)] [[Pretrained Weights](https://github.com/EquationWalker/CATANet/releases/tag/v0.0)] [[Visual Results](https://pan.quark.cn/s/f8ea09048957)]
+### [[arXiv](https://arxiv.org/abs/2503.06896)] [[Pretrained Models](https://github.com/EquationWalker/CATANet/releases/tag/v0.0)] [[Visual Results](https://pan.quark.cn/s/f8ea09048957)]
 
 ## :newspaper:News
 
-- :white_check_mark: 2025-03-13: Release the  [pretrained weights](https://github.com/EquationWalker/CATANet/releases/tag/v0.0)  and [visual results](https://pan.quark.cn/s/f8ea09048957) of our CATANet.🤗
+- :white_check_mark: 2025-03-13: Release the  [pretrained models](https://github.com/EquationWalker/CATANet/releases/tag/v0.0)  and [visual results](https://pan.quark.cn/s/f8ea09048957) of our CATANet.🤗
 - :white_check_mark: 2025-03-12:  arXiv paper available.
 - :white_check_mark: 2025-03-09: Release the codes of our CATANet.
 
@@ -65,7 +65,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4
 - Download the testing data (Set5 + Set14 + BSD100 + Urban100 + Manga109 [[Download](https://drive.google.com/file/d/1_FvS_bnSZvJWx9q4fNZTR8aS15Rb0Kc6/view?usp=sharing)]) and put them in the folder `./datasets`.
 
 ### Pretrained Models
-- Download the [pretrained weights](https://github.com/EquationWalker/CATANet/releases/tag/v0.0) and put them in the folder `./pretrained_models`.
+- Download the [pretrained models](https://github.com/EquationWalker/CATANet/releases/tag/v0.0) and put them in the folder `./pretrained_models`.
 
 ### Testing Commands
 - Refer to the testing configuration files in `./options/test` folder for detailed settings.
