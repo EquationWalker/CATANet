@@ -1,1 +1,1 @@
-## Put the pretrained weights at here.
+## Put the pretrained models at here.
