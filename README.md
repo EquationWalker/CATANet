@@ -5,7 +5,7 @@ This repository is an official implementation of the paper "CATANet: Efficient C
 
 ## :newspaper:News
 
-- :white_check_mark: 2025-03-15: Release the  [supplementary material](https://github.com/EquationWalker/CATANet/releases/tag/v0.1) of our CATANet.:smiley:
+- :white_check_mark: 2025-03-15: Release the  [supplementary material](https://github.com/EquationWalker/CATANet/releases/tag/v0.1) of our CATANet.😃
 - :white_check_mark: 2025-03-13: Release the  [pretrained models](https://github.com/EquationWalker/CATANet/releases/tag/v0.0)  and [visual results](https://pan.quark.cn/s/f8ea09048957) of our CATANet.🤗
 - :white_check_mark: 2025-03-12:  arXiv paper available.
 - :white_check_mark: 2025-03-09: Release the codes of our CATANet.
