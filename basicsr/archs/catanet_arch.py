@@ -253,7 +253,7 @@ def patch_reverse(crop_x, x, step, ps):
         step (int): Divide step.
         ps (int): Patch size.
     Returns:
-        ouput (Tensor): Reversed image.
+        output (Tensor): Reversed image.
     """
     b, c, h, w = x.size()
     output = torch.zeros_like(x)
