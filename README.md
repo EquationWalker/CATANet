@@ -50,13 +50,13 @@ python setup.py develop
 # training dataset: DIV2K
 
 # ×2 scratch, input size = 64×64,800k iterations
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4 basicsr/train.py -opt options/train/train_CATANet_x2_scratch.yml
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4 basicsr/train.py -opt options/train/train_CATANet_x2_scratch.yml --launcher pytorch
 
 # ×3 finetune, input size = 64×64, 250k iterations
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4 basicsr/train.py -opt options/train/train_CATANet_x3_finetune.yml
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4 basicsr/train.py -opt options/train/train_CATANet_x3_finetune.yml --launcher pytorch
 
 # ×4 finetune, input size = 64×64, 250k iterations
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4 basicsr/train.py -opt options/train/train_CATANet_x4_finetune.yml
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --standalone --nnodes=1 --nproc_per_node=4 basicsr/train.py -opt options/train/train_CATANet_x4_finetune.yml --launcher pytorch
 ```
 
 
